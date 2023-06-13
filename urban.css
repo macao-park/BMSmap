@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.top {
+    font-size: 30px;
+}
+
+.buttona {
+    float: left;
+    width: 20%;
+    height: 60px;
+    font-size: 18px;
+ }
+
+.buttonb {
+    float: left;
+    width: 20%;
+    height: 60px;
+    font-size: 18px;
+}
+
+.buttonc {
+    float: left;
+    width: 20%;
+    height: 60px;
+    font-size: 18px;
+}
+
+.buttond {
+    float: left;
+    width: 20%;
+    height: 60px;
+    font-size: 18px;
+}
