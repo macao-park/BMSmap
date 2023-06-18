@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="ko">
+
+
 <head>
     <title>부산문화생활</title>
+
+
+<!-- css font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    
+<!-- html font 변경 -->
     <style> 
         .jm-font{
             font-family: 'Noto Sans KR', sans-serif;
         }
       </style>
 </head>
+
+
+<!-- css, jvs 연결 -->
 <link rel="stylesheet" href="./index.css">
-<p>
+<script src="./index.js"></script>
+
 
     
-    <div class="flex-container">
-        <img src ="img/logo.png" width="150px" height="150px">
+    <div class="logo">
+        <a href="./index.html">
+            <img src ="img/logo.png" width="150px" height="150px"></a>
     </div>
 
-    <div class="flex-container">
+    <div class="flex-item">
         <div class="flex-item color-blue">
-            <a href="schedule.html">
+            <a href="index.html">
                 <span class="jm-font">#일자보기</span></a></div>
         <div class="flex-item color-blue">
             <a href="urban.html">
                 <span class="jm-font">#공간어디</span></a></div>
         <div class="flex-item color-blue">
-            <span class="jm-font">#추천보기</span></div>
+                <span class="jm-font">#추천보기</span></div>
         <div class="flex-item color-blue">
-            <span class="jm-font">#초대권여기</span></div>
+                <span class="jm-font">#초대권여기</span></div>
     </div></p></br>
 
     <div class="schedule">
-        <div class="content">
-            <span class="jm-font">6월 19일(월)</span></p>
-                <span class="jm-font">[팝업스토어] 최고심 / 서면 / 5.4~6.30</span></p>
-                <span class="jm-font">[페스티벌] 부산골목페스티벌 / 전포 6.17~18 / 봉산 6.24~25 / 망미 7.1~2</span></p>
-                <span class="jm-font">[프로그램] 힐링타임즈 / 해운대 / 6.14~7.23</span></p>
-                <span class="jm-font">[전시] 요시고 YOSIGO / 상상마당 부산 / 5.27~9.3</span></p>
-                <span class="jm-font">[박람회] 부산커피쇼 / 벡스코 / 6.19~6.23</span></p></br>
-            <span class="jm-font">6월 20일(화)</span></p>
-            <span class="jm-font">6월 21일(수)</span></p>
-            <span class="jm-font">6월 22일(목)</span></p>
-            <span class="jm-font">6월 23일(금)</span></p>
-            <span class="jm-font">6월 24일(토)</span></p>
-            <span class="jm-font">6월 25일(일)</span></p>
+        <div class="left__body">
+            <div class="left__body__top">6월 19일(월)</div> </br>
+                <div class="navigation">
+                    <div class="navigation__item" id="menu1" onclick="menu1()">[팝업스토어] 최고심 / 서면 / 5.4~6.30</div>
+                    <div class="navigation__item" id="menu2" onclick="menu2()">[페스티벌] 부산골목페스티벌 / 전포 6.17~18 / 봉산 6.24~25 / 망미 7.1~2</div>
+                    <div class="navigation__item" id="menu3">[프로그램] 힐링타임즈 / 해운대 / 6.14~7.23</div>
+                    <div class="navigation__item" id="menu4">[전시] 요시고 YOSIGO / 상상마당 부산 / 5.27~9.3</div>
+                    <div class="navigation__item" id="menu5">[박람회] 부산커피쇼 / 벡스코 / 6.19~6.23</div>
+                </div></br>
+            <div class="left__body__top">6월 20일(화)</div> </br>
+            <div class="left__body__top">6월 21일(수)</div> </br>
+            <div class="left__body__top">6월 22일(목)</div> </br>
+            <div class="left__body__top">6월 23일(금)</div> </br>
+            <div class="left__body__top">6월 24일(토)</div> </br>
+            <div class="left__body__top">6월 25일(일)</div> </br>
         </div>
-        <div class="summary"></div>
+        
+        <div class="right__body">
+            <iframe id="contentFrame" src="./blank.html" frameborder="0"></iframe>
+        </div>
     </div>
 
     </html>
