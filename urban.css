@@ -2,34 +2,35 @@
     box-sizing: border-box;
 }
 
-.top {
-    font-size: 30px;
+
+ .flex-container{
+            display: flex;
+        }
+        .flex-item{
+            width: 300px;
+            height: 30px;
+        }
+
+
+.schedule {
+    display: space-between;
 }
 
-.buttona {
-    float: left;
-    width: 20%;
-    height: 60px;
-    font-size: 18px;
- }
-
-.buttonb {
-    float: left;
-    width: 20%;
-    height: 60px;
-    font-size: 18px;
+.content {
+    width: 50%;
+    height: 50%;
+    border: 5px solid;
 }
 
-.buttonc {
-    float: left;
-    width: 20%;
-    height: 60px;
-    font-size: 18px;
+.summary {
+    width: 50%;
+    height: 50%;
+    border: 5px solid;
 }
 
-.buttond {
-    float: left;
-    width: 20%;
-    height: 60px;
+
+a {
+    text-decoration-line: none;
     font-size: 18px;
+    color: black;
 }
