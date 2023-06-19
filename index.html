@@ -14,9 +14,29 @@
     
 <!-- html font 변경 -->
     <style> 
-        .jm-font{
+
+        body {
             font-family: 'Noto Sans KR', sans-serif;
         }
+
+        /* .jm-font{
+            font-family: 'Noto Sans KR', sans-serif;
+        } */
+
+
+        details {
+        font-size: 15px;
+        }
+
+
+        details[open] summary {
+            font-weight: 20px;
+        }
+
+        details > summary {
+            font-size: 15px;
+        }
+
       </style>
 </head>
 
@@ -25,6 +45,8 @@
 <link rel="stylesheet" href="./index.css">
 <script src="./index.js"></script>
 
+
+<body>
 
 <div class="entire">
     
@@ -36,27 +58,53 @@
 
     <div class="flex-item">
         <div class="flex-item-color-blue">
-            <a href="index.html"> #일자보기</div>
+            <a href="index.html"> #일자보기</a></div>
         <div class="flex-item-color-blue">
-            <a href="urban.html"> #공간어디</div>
+            <a href="urban.html"> #공간어디</a></div>
         <div class="flex-item-color-blue">
-            <a href="recommandation.html"> #추천보기</div>
+            <a href="recommandation.html"> #추천보기</a></div>
         <div class="flex-item-color-blue">
-            <a href="ticket.html"> #초대권여기</div>
+            <a href="ticket.html"> #초대권여기</a></div>
     </div></br> <hr/> </br>
 
     <div class="schedule">
         <div class="left__body">
-            <div class="left__body__top">6월 19일(월)</div> </br>
-                <div class="navigation">
-                    <div class="navigation__item" id="menu1" onclick="menu1()">[팝업스토어] 최고심 / 서면 / 5.4~6.30</div>
-                    <div class="navigation__item" id="menu2" onclick="menu2()">[페스티벌] 부산골목페스티벌 / 전포 6.17~18 / 봉산 6.24~25 / 망미 7.1~2</div>
-                    <div class="navigation__item" id="menu3">[프로그램] 힐링타임즈 / 해운대 / 6.14~7.23</div>
-                    <div class="navigation__item" id="menu4">[전시] 요시고 YOSIGO / 상상마당 부산 / 5.27~9.3</div>
-                    <div class="navigation__item" id="menu5">[박람회] 부산커피쇼 / 벡스코 / 6.19~6.23</div>
-                </div></br>
-            <div class="left__body__top">6월 20일(화)</div> </br>
+            <div class="left__body__top">
+                <details>
+                    <summary>6월 19일(월)</summary>
+                    <p>[팝업스토어] 최고심 / 서면 / 5.4~6.30</p>
+                    [페스티벌] 부산골목페스티벌 / 전포 6.17~18 / 봉산 6.24~25 / 망미 7.1~2
+                    [프로그램] 힐링타임즈 / 해운대 / 6.14~7.23
+                    [전시] 요시고 YOSIGO / 상상마당 부산 / 5.27~9.3
+                    [박람회] 부산커피쇼 / 벡스코 / 6.19~6.23
+                </details> </br>
+            </div> </br>
+
+
+
+
+            <div class="left__body__top">
+                <details>
+                    <summary>6월 20일(화)</summary>
+                    <p>[팝업스토어] 최고심 / 서면 / 5.4~6.30</p>
+                    <p>[페스티벌] 부산골목페스티벌 / 전포 6.17~18 / 봉산 6.24~25 / 망미 7.1~2</p>
+                    <p>[프로그램] 힐링타임즈 / 해운대 / 6.14~7.23</p>
+                    <p>[전시] 요시고 YOSIGO / 상상마당 부산 / 5.27~9.3</p>
+                    <p>[박람회] 부산커피쇼 / 벡스코 / 6.19~6.23</p>
+                </details> </br>
+            </div> </br>
+            
+
             <div class="left__body__top">6월 21일(수)</div> </br>
+
+            <div class="navigation">
+                <div class="navigation__item" id="menu1" onclick="menu1()">[팝업스토어] 최고심 / 서면 / 5.4~6.30</div>
+                <div class="navigation__item" id="menu2" onclick="menu2()">[페스티벌] 부산골목페스티벌 / 전포 6.17~18 / 봉산 6.24~25 / 망미 7.1~2</div>
+                <div class="navigation__item" id="menu3">[프로그램] 힐링타임즈 / 해운대 / 6.14~7.23</div>
+                <div class="navigation__item" id="menu4">[전시] 요시고 YOSIGO / 상상마당 부산 / 5.27~9.3</div>
+                <div class="navigation__item" id="menu5">[박람회] 부산커피쇼 / 벡스코 / 6.19~6.23</div>
+            </div></br>
+
             <div class="left__body__top">6월 22일(목)</div> </br>
             <div class="left__body__top">6월 23일(금)</div> </br>
             <div class="left__body__top">6월 24일(토)</div> </br>
@@ -64,11 +112,26 @@
         </div>
         
         <div class="right__body">
-            <iframe id="contentFrame" src="./summary.html" frameborder="0"></iframe>
+            <iframe id="contentFrame" src="./blank.html" frameborder="0"></iframe>
         </div>
     </div>
 </div>
 
-    </html>
+
+
+
+<body>
+    <details>
+        <summary>1. 토글 메뉴를 작동하려면 클릭해주세요.</summary>
+        여기에 자세한 내용이 보입니다. 토글 안에 내용을 작성해보세요.
+    </details>
+    <details>
+        <summary>2.토글 메뉴를 작동하려면 클릭해주세요.</summary>
+        여기에 자세한 내용이 보입니다. 토글 안에 내용을 작성해보세요.
+    </details>
+    </body>
+
+
 </body>
+
 </html>

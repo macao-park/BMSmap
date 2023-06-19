@@ -38,8 +38,9 @@ a {
 
     .left__body {
         width: 50%;
-        height: 1000px;
+        height: 800px;
         font-family: 'Noto Sans KR', sans-serif;
+
     }
 
         .left__body__top {
@@ -48,11 +49,11 @@ a {
             width: 95%;
         }
 
+
         .navigation{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            font-family: 'Noto Sans KR', sans-serif;
         }
 
             .navigation__item{
@@ -64,7 +65,6 @@ a {
         width: 50%;
         height: 800px;
         font-family: 'Noto Sans KR', sans-serif; 
-        border: 1px solid silver;
 
         #contentFrame {
             width: 100%;
