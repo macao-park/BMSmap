@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+
+.entire {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    cursor: pointer;
+    text-align : center;
+}
+
+.flex-item{
+    display: flex;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    justify-content : space-evenly;
+    align-items : center;
+
+}
+
+.ticket {
+    display: flex;
+    justify-content : space-evenly;
+    flex-wrap: wrap;
+}
