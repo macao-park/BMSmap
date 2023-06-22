@@ -28,8 +28,17 @@ a {
 
 }
 
+
 .ticket {
-    display: flex;
-    justify-content : space-evenly;
-    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.ticket img {
+    width: 350px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
