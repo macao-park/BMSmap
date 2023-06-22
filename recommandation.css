@@ -30,40 +30,43 @@ a {
 }
 
 
-
-button[data-filter="축제"]:focus ~ div:not([class*="축제"]) {
-    display:none;
-  }
-
-button[data-filter="전시"]:focus ~ div:not([class*="전시"]) {
-    display:none;
-  }
-  
-button[data-filter="연극"]:focus ~ div:not([class*="연극"]) {
-    display:none;
-  }
-  
-button[data-filter="프로그램"]:focus ~ div:not([class*="프로그램"]) {
-    display:none;
-  }
-
-  button[data-filter="라이브"]:focus ~ div:not([class*="라이브"]) {
-    display:none;
-  }
-
-  button[data-filter="기타"]:focus ~ div:not([class*="기타"]) {
-    display:none;
+.hidden {
+    display: none;
   }
 
 
-.filteredList {
-    background-color: aqua;
+
+.filters button {
+    font-size: 14px;
+    border-radius: 50px;
+    background-color: rgb(4, 0, 255);
+    color: rgb(255, 255, 255);
+    width: 70px;
+    height: 30px;
+    border: none;
 }
 
 
-    .filteredList img {
-        align-items: center;
-        width: 300px;
-        height: 300px;
-    }
 
+.list {
+    display : flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+
+.list img {
+    width: 350px;
+    height: 350px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.list p {
+    font-size: 13px;
+    line-height: 10px;
+}

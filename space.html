@@ -2,70 +2,69 @@
 <html lang="ko">
 <head>
     <title>부산문화생활</title>
-    <style> 
-        .jm-font{
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-      </style>
+
+
+<!-- css font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./space.css">
 </head>
-<link rel="stylesheet" href="./urban.css">
+
 
 <body>
 
-    <div class="logo">
-        <a href="./index.html">
-            <img src ="img/logo.png" width="150px" height="150px"></a>
-    </div>
+    <div class="entire">
+    
+        <div class="logo">
+            <a href="./recommandation.html">
+                <img src ="img/logo.png" width="150px" height="150px"></a>
+        </div>
 
+    
+        <div class="flex-item">
+            <div class="flex-item-color-blue">
+                <a href="recommandation.html"> #전체보기</a></div>
+            <div class="flex-item-color-blue">
+                <a href="index.html"> #일자보기</a></div>
+            <div class="flex-item-color-blue">
+                <a href="space.html"> #공간어디</a></div>
+            <div class="flex-item-color-blue">
+                <a href="ticket.html"> #초대권여기</a></div>
+        </div></br> <hr/> </br>
 
-    <div class="flex-container">
-        <div class="flex-item color-blue">
-            <a href="index.html">
-                <span class="jm-font">#일자보기</span></a></div>
-        <div class="flex-item color-blue">
-            <a href="urban.html">
-                <span class="jm-font">#공간어디</span></a></div>
-        <div class="flex-item color-blue">
-            <span class="jm-font">#추천보기</span></div>
-        <div class="flex-item color-blue">
-            <span class="jm-font">#초대권여기</span></div>
-    </div></p>
 
 
     <head>
-        <title>간단한 지도 표시하기</title>
         <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=p086u5t9kk"></script>
     </head>
+
     <body>
     <div id="map" style="width:100%;height: 800px;"></div>
     
     <script>
     var mapOptions = {
         center: new naver.maps.LatLng(35.1577790, 129.0591715),
-        zoom: 13
+        zoom: 15
     };
     
     var map = new naver.maps.Map('map', mapOptions);
     </script>
-
-
     </body>
 
 
 
 
-    <head>
-        <title>간단한 지도 표시하기</title>
-        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=p086u5t9kk"></script>
-    </head>
+
     <body>
+
     <div id="map" style="width:100%;height: 800px;"></div>
 
-
     <script id="code">
-        var elluce = new naver.maps.LatLng(35.2029360, 129.0857685)
+        var elluce = new naver.maps.LatLng(35.1577790, 129.0591715)
         var map = new naver.maps.Map('map', {
-          center: new naver.maps.LatLng(35.2029360, 129.0857685),
+          center: new naver.maps.LatLng(35.1577790, 129.0591715),
           zoom: 17,
           minZoom: 8, //지도의 최소 줌 레벨
           zoomControlOptions: { //줌 컨트롤의 옵션
@@ -83,7 +82,7 @@
     
         var contentString = [
         '<div class="iw_inner" style="padding:3px; margin: 5px 0px 5px 0px; width: 150px; height: 45px; text-align: center;">',
-        '   <p style="foint-size: 2rem; margin: 0;">어반브릿지</p>',
+        '   <p style="foint-size: 2rem; margin: 0;">문화공간</p>',
         '   <p style="font-size: 0.8rem; margin: 0;">설명주절주절</p>',
         '</div>'
         ].join('');
@@ -112,9 +111,6 @@
     
         infowindow.open(map, marker);
     </script>
-
-
-
 
 
 </body>

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
+
 <link rel="stylesheet" href="./recommandation.css">
 <script src="./recommandation.js"></script>
 
@@ -20,7 +21,7 @@
     <div class="entire">
     
         <div class="logo">
-            <a href="./index.html">
+            <a href="./recommandation.html">
                 <img src ="img/logo.png" width="150px" height="150px"></a>
         </div>
 
@@ -31,39 +32,63 @@
             <div class="flex-item-color-blue">
                 <a href="index.html"> #일자보기</a></div>
             <div class="flex-item-color-blue">
-                <a href="urban.html"> #공간어디</a></div>
+                <a href="space.html"> #공간어디</a></div>
             <div class="flex-item-color-blue">
                 <a href="ticket.html"> #초대권여기</a></div>
         </div></br> <hr/> </br>
 
 
 
-        <div class="filteredList">
-            <button class="filter-option" data-filter="축제" >축제</button> 
-            <button class="filter-option" data-filter="전시" >전시</button> 
-            <button class="filter-option" data-filter="연극" >연극</button> 
-            <button class="filter-option" data-filter="프로그램" >프로그램</button> 
-            <button class="filter-option" data-filter="라이브" >라이브</button> 
-            <button class="filter-option" data-filter="기타" >기타</button> 
-            <button class="filter-option" data-filter="*" >전체</button></br></br>
-        
-        
-        <!-- <div class="contents"> -->
 
-            <div class="축제">[축제] 부산골목페스티벌</div>
+        <div class="filters">
+            <h3>필터먹이기</h3>
+            <button class="filter-option" data-filter="전시" onclick=filterAnimals(event)>전시</button>
+            <button class="filter-option" data-filter="연극" onclick=filterAnimals(event)>연극</button>
+            <button class="filter-option" data-filter="라이브" onclick=filterAnimals(event)>라이브</button>
+            <button class="filter-option" data-filter="*" onclick=filterAnimals(event)>전체</button>
+          </div></br></br>
+
+
+        <div class="list">
+            <div class="전시" >
+                <a href="https://www.instagram.com/p/CrISTCuOhFT/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target = "_blank">
+                    <img src = "img/yosigo.jpg"></br>
+                    <p>[전시] YOSIGO - BUSAN</p>
+                    <p>5/27(토)~9/3(일) 상상마당 부산</p></a></div>            
+
+            <div class="라이브">
+                <img src = "img/2.jpg"></br>
+                <p>Egle</p>
+                <p>Egle</p></a></div>     
+
             <div class="전시">
-                <img src="img/1.jpg"></br> [전시] 최고심 블라블라</div>
-            <div class="연극">
-                <img src="img/2.jpg"></br> [연극] 운빨로맨스</div>
-            <div class="연극">
-                <img src="img/3.jpg"></br> [연극] 언플러그드</div>
-            <div class="프로그램">
-                <img src="img/4.jpg"></br> [프로그램] 힐링타임즈</div>
-            <div class="라이브">[라이브] Daily8 </div>
-            <div class="기타">[발간] 구석구석, 부산탐험기</div>
+                <a href="https://www.instagram.com/erikjohansson_korea/" target = "_blank">
+                    <img src = "img/eric.jpg"></br>
+                    <p>[전시] 상상을 찍는 작가 에릭 요한슨</p>
+                    <p>6/27(화)~10/8(일) 부산문화회관 전시실</p></a></div>         
+
+            <div class="전시">
+                <img src = "img/3.jpg"></br>
+                <p>Shark</p>
+                <p>Shark</p></a></div>   
+
+            <div class="라이브">
+                <img src = "img/2.jpg"></br>
+                <p>Canary</p>
+                <p>Canary</p></a></div>
+
+            <div class="전시">
+                <img src = "img/1.jpg"></br>
+                <p>Human</p>
+                <p>Human</p></a></div>   
+
+            <div class="전시">
+                <img src = "img/1.jpg"></br>
+                <p>Salamander</p>
+                <p>Salamander</p></a></div>
 
         </div>
-        </div>
+
 
 </body>
 
