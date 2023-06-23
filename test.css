@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  .hbody {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: white;
+  }
+  
+  .title {
+    font-size: 2em;
+  }
+  
+  .title > a {
+    color: white;
+  }
+
+
+
+
+  @media screen and (min-width: 625px) {
+
+    #menu {
+      display: flex;
+    }
+  
+    #menu > li {
+      padding: 20px 30px;
+      font-size: 20px;
+    }
+  
+    li > a {
+      color: white;
+    }
+  
+  
+    .fas {
+      display: none;
+    }
+
+    #minimenu {
+        display: none;
+    }
+  }
+
+
+
+  /* @media screen and (max-width: 625px) {
+
+    .nav {
+      padding: 30px 40px;
+    }
+  
+    #menu {
+      display: none;
+    }
+  
+    .fab {
+      display : none;
+    }
+  
+    .fas {
+      font-size: 1em;
+    }
+  } */
+
+
+  /* 공통적용 */
+.hidden {
+    display: none;
+  }
+  
+  /* 가로 너비가 625px 이하일 때 미디어 쿼리 내용 */
+  @media screen and (max-width: 625px) {
+    .nav {
+      padding: 30px 40px;
+      justify-content: space-between;
+    }
+  
+    #menu {
+      display: none;
+    }
+  
+    .fas {
+      font-size: 1em;
+    }
+  
+    #minimenu {
+      width: 100%;
+      height: 270px;
+      background-color: black;
+    }
+  
+    #minimenu > li {
+      font-size: 20px;
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #minimenu > li:hover {
+      background-color: orange;
+    }
+  }
