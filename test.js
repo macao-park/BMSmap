@@ -1,7 +1,5 @@
 
-
-// Function to toggle the bar
-function geeksforgeeks() {
+function show() {
   let x = document.getElementById("menu_side");
    
   if (x.style.display === "block") {
@@ -9,9 +7,4 @@ function geeksforgeeks() {
   } else {
       x.style.display = "block";
   }
-}
-
-// Function to toggle the plus menu into minus
-function myFunction(x) {
-  x.classList.toggle("hamberg");
 }
