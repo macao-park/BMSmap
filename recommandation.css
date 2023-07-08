@@ -111,7 +111,8 @@ li {
 
   }
 
-
+.filters {
+}
 
 
 .filters button {
@@ -124,6 +125,7 @@ li {
     border: none;
     cursor: pointer;
     font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 8px;
 
 }
 
