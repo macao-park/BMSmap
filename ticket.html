@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="./ticket.css">
+<script src="./ticket.js"></script>
+
+<!-- 폰에서보기 레이아웃 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
 </head>
 
 
@@ -17,25 +22,40 @@
 
     <div class="entire">
     
-        <div class="logo">
-            <a href="./recommandation.html">
-                <img src ="img/logo.png" width="150px" height="150px"></a>
-        </div>
+        <div class="menu">
+            
+            
+            <div class="open">
+                
+                <div class="logo">
+                    <a href="./recommandation.html">
+                        <img src ="img/logo.png" width="150px" height="70px"></a>
+                </div>       
+            
+                <div class="menu_side">
+                    <li><a href="recommandation.html"> #전체보기</a></li>
+                    <li><a href="index.html"> #일자보기</a></li>
+                    <li><a href="space.html"> #공간어디</a></li>
+                    <li><a href="ticket.html"> #초대권여기</a></li>
+                </div>
 
-    
-        <div class="flex-item">
-            <div class="flex-item-color-blue">
-                <a href="recommandation.html"> #전체보기</a></div>
-            <div class="flex-item-color-blue">
-                <a href="index.html"> #일자보기</a></div>
-            <div class="flex-item-color-blue">
-                <a href="space.html"> #공간어디</a></div>
-            <div class="flex-item-color-blue">
-                <a href="ticket.html"> #초대권여기</a></div>
-        </div></br> <hr/> </br>
+                <i onclick="show()" class="hamburg"> 
+                    <img src ="img/hamburg.png" width="50px" height="70px"></a></i>
+
+            </div></br><hr></br>
+
+
+            <div id="menu_mini">  
+                <li><a href="recommandation.html"> #전체보기</a></li>
+                <li><a href="index.html"> #일자보기</a></li>
+                <li><a href="space.html"> #공간어디</a></li>
+                <li><a href="ticket.html"> #초대권여기</a></li>
+            </div>
 
 
         <div class="ticket">
+            <p>클릭하면 이벤트 참여할 수 있는 페이지로 넘어갑니다. 뾰로롱</p>
+            
             <a href="https://www.instagram.com/p/CsIbksMpv7W/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target = "_blank">
                 <img src="./img/1.jpg"></img></a>
                 
