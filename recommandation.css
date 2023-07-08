@@ -122,25 +122,31 @@ li {
     width: 70px;
     height: 30px;
     border: none;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+
 }
 
+
+.hidden {
+    display: none;
+}
 
 
 .list {
     display : flex;
-    justify-content: center;
-    align-items:center;
     flex-wrap: wrap;
 }
 
 
 .list img {
-    width: 300px;
+    max-width: 300px;
     height: auto;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
+    flex-grow: 1;
 }
 
 
