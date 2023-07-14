@@ -136,23 +136,44 @@ li {
 
 
 .list {
-    display : flex;
+    display : inline-flex;
     flex-wrap: wrap;
 }
 
+.전시 {
+  width: 130px;
+  font-size: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.라이브 {
+  width: 130px;
+  font-size: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.연극 {
+  width: 130px;
+  font-size: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 .list img {
-    max-width: 300px;
+    max-width: 130px;
     height: auto;
-    margin-top: 5px;
+    /* margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    flex-grow: 1;
+    flex-grow: 1; */
 }
 
 
 .list p {
-    font-size: 13px;
+    font-size: 10px;
     line-height: 10px;
+    white-space: normal;
 }

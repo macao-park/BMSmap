@@ -10,24 +10,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="./summary.css">
+<script src="./summary.js"></script>
+
+
+<!-- 폰에서보기 레이아웃 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
 </head>
 
 
-<body>
+
+<div class="entire">
     
-    <div class="box">
-        <img class="content" src="./img/choigosim.jpg">
-    </div> </br>
+    <div class="menu">
+        
+        
+        <div class="open">
+            
+            <div class="logo">
+                <a href="./recommandation.html">
+                    <img src ="img/logo.png" width="150px" height="70px"></a>
+            </div>       
+        
+            <div class="menu_side">
+                <li><a href="recommandation.html"> #전체보기</a></li>
+                <li><a href="index.html"> #일자보기</a></li>
+                <li><a href="space.html"> #공간어디</a></li>
+                <li><a href="ticket.html"> #초대권여기</a></li>
+            </div>
 
-    <div class="explain">
-        <div class="info1">[팝업스토어] 최고심</div> </br>
-        <div class="info2">-일정 5.4~6.30</div>
-        <div class="info3">-장소 서면</div>
-        <div class="info4">-링크 블라블라</div>
-        <div class="info5">-설명 블라블라</div>
-    </div>
+            <i onclick="show()" class="hamburg"> 
+                <img src ="img/hamburg.png" width="50px" height="70px"></a></i>
 
-</body>
+        </div></br><hr></br>
+
+
+        <div id="menu_mini">  
+            <li><a href="recommandation.html"> #전체보기</a></li>
+            <li><a href="index.html"> #일자보기</a></li>
+            <li><a href="space.html"> #공간어디</a></li>
+            <li><a href="ticket.html"> #초대권여기</a></li>
+        </div>
+
+        <div class="box">
+            <img class="content" src="./img/choigosim.jpg">
+        </div> </br>
+    
+        <div class="explain">
+            <div class="info1">[팝업스토어] 최고심</div> </br>
+            <div class="info2">-일정 5.4~6.30</div>
+            <div class="info3">-장소 서면</div>
+            <div class="info4">
+                <a href = "https://www.instagram.com/gosimperson/">
+                    -링크 https://www.instagram.com/gosimperson/
+                </a>
+            </div>
+            <div class="info5">-설명 블라블라</div>
+        </div>
+
+
+        <a href="javascript:history.back();">
+            <button id="back">뒤로가기</button>
+        </a>
+
+
+
+    </div>  
+    
+    
+
+
+
+</div>
 
 
 </html>
