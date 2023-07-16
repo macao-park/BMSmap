@@ -37,7 +37,7 @@
                     <li><a href="recommandation.html"> #전체보기</a></li>
                     <li><a href="index.html"> #일자보기</a></li>
                     <li><a href="space.html"> #공간어디</a></li>
-                    <li><a href="ticket.html"> #초대권여기</a></li>
+                    <!-- <li><a href="ticket.html"> #초대권여기</a></li> -->
                 </div>
 
                 <i onclick="show()" class="hamburg"> 
@@ -50,7 +50,7 @@
                 <li><a href="recommandation.html"> #전체보기</a></li>
                 <li><a href="index.html"> #일자보기</a></li>
                 <li><a href="space.html"> #공간어디</a></li>
-                <li><a href="ticket.html"> #초대권여기</a></li>
+                <!-- <li><a href="ticket.html"> #초대권여기</a></li> -->
             </div>
 
 
@@ -79,48 +79,107 @@
 
     <body>
 
-    <div id="map" style="width:100%;height: 800px;"></div>
+    <div id="map">
 
     <script id="code">
         var elluce = new naver.maps.LatLng(35.1577790, 129.0591715)
         var map = new naver.maps.Map('map', {
           center: new naver.maps.LatLng(35.1577790, 129.0591715),
-          zoom: 17,
+          zoom: 12,
           minZoom: 8, //지도의 최소 줌 레벨
           zoomControlOptions: { //줌 컨트롤의 옵션
               position: naver.maps.Position.TOP_RIGHT
         }});
+
+
         var marker = new naver.maps.Marker({
             icon: {
               url: "./img/point.png",
-              scaledSize: new naver.maps.Size(40, 50),
+              scaledSize: new naver.maps.Size(25, 25),
               origin: new naver.maps.Point(0, 0),
             },
             position: elluce,
             map: map
         });
+
+
+
+        // 하얀 설명박스
+        // var contentString = [
+        // '<div class="iw_inner" style="padding:3px; margin: 5px 0px 5px 0px; width: 100px; height: 45px; text-align: center;">',
+        // '   <p style="foint-size: 15px; margin: 0;">문화공간</p>',
+        // '   <p style="font-size: 10px; margin: 0;">설명주절주절</p>',
+        // '</div>'
+        // ].join('');
+
+        // var infowindow = new naver.maps.InfoWindow({
+        //     content: contentString,
+        //     maxWidth: 200,
+        //     height: 50,
+        //     backgroundColor: "white",
+        //     borderColor: "black",
+        //     borderWidth: 1,
+        //     disableAnchor: true,
+        //     textAlign: "center",
+        //     margin: "auto",
     
+        //     pixelOffset: new naver.maps.Point(0, -5)
+        // });
+    
+
+
+        // naver.maps.Event.addListener(marker, "click", function(e) {
+        //     if (infowindow.getMap()) {
+        //         infowindow.close();
+        //     } else {
+        //         infowindow.open(map, marker);
+        //     }
+        // });
+    
+        // infowindow.open(map, marker);
+
+
+
+        var HOME_PATH = window.HOME_PATH || '.';
+        var cityhall = new naver.maps.LatLng(35.1577790, 129.0591715),
+            map = new naver.maps.Map('map', {
+                center: cityhall,
+                zoom: 15
+            }),
+            marker = new naver.maps.Marker({
+            icon: {
+              url: "./img/point.png",
+              scaledSize: new naver.maps.Size(25, 25),
+              origin: new naver.maps.Point(0, 0),
+            },
+                map: map,
+                position: cityhall
+            });
+
+
         var contentString = [
-        '<div class="iw_inner" style="padding:3px; margin: 5px 0px 5px 0px; width: 150px; height: 45px; text-align: center;">',
-        '   <p style="foint-size: 2rem; margin: 0;">문화공간</p>',
-        '   <p style="font-size: 0.8rem; margin: 0;">설명주절주절</p>',
+        '<div class="iw_inner">',
+        '   <h3>문화공간</h3>',
+        '   <p style="font-size: 20px; >서울특별시 중구 태평로1가 31 | 서울특별시 중구 세종대로 110 서울특별시청<br />',
+        '       <img src="'+ HOME_PATH +'/img/example/hi-seoul.jpg" width="55" height="55" alt="서울시청" class="thumb" /><br />',
+        '       02-120 | 공공,사회기관 &gt; 특별,광역시청<br />',
+        '       <a href="http://www.seoul.go.kr" target="_blank">www.seoul.go.kr/</a>',
+        '   </p>',
         '</div>'
         ].join('');
-    
+
         var infowindow = new naver.maps.InfoWindow({
             content: contentString,
-            maxWidth: 200,
-            height: 50,
-            backgroundColor: "white",
-            borderColor: "black",
-            borderWidth: 2,
-            disableAnchor: true,
-            textAlign: "center",
-            margin: "auto",
-    
-            pixelOffset: new naver.maps.Point(0, -5)
+            maxWidth: 140,
+            backgroundColor: "#eee",
+            borderColor: "#2db400",
+            borderWidth: 5,
+            anchorSize: new naver.maps.Size(30, 30),
+            anchorSkew: true,
+            anchorColor: "#eee",
+            pixelOffset: new naver.maps.Point(20, -20)
         });
-    
+
         naver.maps.Event.addListener(marker, "click", function(e) {
             if (infowindow.getMap()) {
                 infowindow.close();
@@ -128,9 +187,12 @@
                 infowindow.open(map, marker);
             }
         });
-    
-        infowindow.open(map, marker);
+
+
+
+
     </script>
 
+    </div></br></br>
 
 </body>

@@ -11,8 +11,3 @@ function show() {
   }
 
 
-
-
-  document.querySelector('#back').onclick = function() {
-    history.back(-1);
-  }

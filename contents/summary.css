@@ -84,6 +84,7 @@ li {
 
   #menu_mini {
     display: none;
+    padding-bottom: 15px;
   }
 
 
@@ -126,21 +127,41 @@ li {
   object-fit: cover;
 }
 
-  .explain {
-    font-family: 'Noto Sans KR', sans-serif;
-  }
+.title {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-style: bold;
+}
 
-  .info1 {
-    font-size: 20px;
-    font-style: bold;
-  }
+.explain {
+  font-family: 'Noto Sans KR', sans-serif;
+  display: flex;
+  font-size: 15px;
+}
+
+.explain_a {
+  width: 100px;
+}
+
+.explain_b {
+}
 
 
-  .info2 {
-    word-break: break-all;
-  }
+.info2 {
+  word-break: break-all;
+}
 
 
-  #back {
-    float: right ;
-  }
+#back {
+  float: right ;
+  font-size: 13px;
+  border-radius: 50px;
+  background-color: rgb(4, 0, 255);
+  color: rgb(255, 255, 255);
+  width: 50px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-bottom: 8px;
+}
