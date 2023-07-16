@@ -116,8 +116,6 @@ li {
 
 
 .box img{
-  width: 300px;
-  height: 300px;
 }
 
 .content {
@@ -129,20 +127,20 @@ li {
 }
 
   .explain {
-    width: 80%;
-    height: 300px;
     font-family: 'Noto Sans KR', sans-serif;
   }
 
   .info1 {
     font-size: 20px;
     font-style: bold;
-
   }
 
 
+  .info2 {
+    word-break: break-all;
+  }
 
 
-  document.querySelector('back').onclick = function() {
-    history.back(-1);
+  #back {
+    float: right ;
   }
