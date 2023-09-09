@@ -142,10 +142,11 @@ li {
 }
 
 .전시 {
-  width: 130px;
+  width: 50%;
   font-size: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-bottom: 25px;
+  /* margin-left: 1px; */
+  /* margin-right: 1px; */
 }
 
 .라이브 {
@@ -163,7 +164,7 @@ li {
 }
 
 .list img {
-    max-width: 130px;
+    max-width: 100%;
     height: auto;
     /* margin-top: 5px;
     margin-bottom: 5px;
@@ -171,7 +172,6 @@ li {
     margin-right: 5px;
     flex-grow: 1; */
 }
-
 
 .list p {
     font-size: 10px;
