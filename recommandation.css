@@ -26,13 +26,14 @@ li {
 .open{
     display: flex;
     justify-content: space-between;
+    padding-left: 0px;
 }
 
 
 .logo{
     cursor: pointer;
-    text-align : center;
-    padding-top: 30px;
+    /* text-align : left; */
+    padding-left: 0px;
 }
 
 
@@ -68,13 +69,13 @@ li {
 
 @media screen and (max-width: 750px) {
     .open {
-      padding: 20px 40px;
+      /* padding: 20px 40px; */
       justify-content: space-between;
     }  
  
     .hamburg {
       cursor: pointer;
-      padding-top: 30px;
+      padding-top: 5px;
     }
     
     .menu_side {
