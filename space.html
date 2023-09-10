@@ -102,43 +102,8 @@
 
 
 
-        // 하얀 설명박스
-        // var contentString = [
-        // '<div class="iw_inner" style="padding:3px; margin: 5px 0px 5px 0px; width: 100px; height: 45px; text-align: center;">',
-        // '   <p style="foint-size: 15px; margin: 0;">문화공간</p>',
-        // '   <p style="font-size: 10px; margin: 0;">설명주절주절</p>',
-        // '</div>'
-        // ].join('');
-
-        // var infowindow = new naver.maps.InfoWindow({
-        //     content: contentString,
-        //     maxWidth: 200,
-        //     height: 50,
-        //     backgroundColor: "white",
-        //     borderColor: "black",
-        //     borderWidth: 1,
-        //     disableAnchor: true,
-        //     textAlign: "center",
-        //     margin: "auto",
-    
-        //     pixelOffset: new naver.maps.Point(0, -5)
-        // });
-    
-
-
-        // naver.maps.Event.addListener(marker, "click", function(e) {
-        //     if (infowindow.getMap()) {
-        //         infowindow.close();
-        //     } else {
-        //         infowindow.open(map, marker);
-        //     }
-        // });
-    
-        // infowindow.open(map, marker);
-
-
-
         var HOME_PATH = window.HOME_PATH || '.';
+
         var cityhall = new naver.maps.LatLng(35.1577790, 129.0591715),
             map = new naver.maps.Map('map', {
                 center: cityhall,
@@ -156,21 +121,21 @@
 
 
         var contentString = [
-        // '<div class="iw_inner1">',
-        // '   <p style=font-size: 5px; >부산문화생활</p>',
-        // '</div>',
 
         '<div class="iw_inner">',
-        '   <p style=font-size: 5px; > 부산문화생활</p>',
-        '</div>',
 
-        '<div class="iw_inner2">',
-        '   <p style="font-size: 8px; ><a href="http://www.instagram.com/busan_munhwa_saenghwal/" target="_blank">@busan_munhwa_saehwal</a><br>부산시 해운대구 수영강변대로 140</p>',
+        '   <p style = "font-size: 15px; font-weight: bold; margin: 0px 0px 5px 0px" > 부산문화생활<br/>',
         '   </p>',
+
+        '   <p style = "font-size: 10px; margin: 0px" > 부산시 해운대구 수영강변대로 140<br/>',
+        '       <a href="http://www.instagram.com/busan_munhwa_saenghwal/" target="_blank">@부산문화생활</a><br />',
+        '       <img src="/img/1.jpg" width="55" height="55"><img src="/img/2.jpg" width="55" height="55"><br />',
+        '   </p>',
+
         '</div>'
 
         ].join('');
-
+        
         var infowindow = new naver.maps.InfoWindow({
             content: contentString,
             maxWidth: 200,
@@ -191,11 +156,24 @@
             }
         });
 
-
+        // var cityhall = new naver.maps.LatLng(35.1577790, 129.0591720),
+        //     map = new naver.maps.Map('map', {
+        //         center: cityhall,
+        //         zoom: 15
+        //     }),
+        //     marker = new naver.maps.Marker({
+        //     icon: {
+        //       url: "./img/point.png",
+        //       scaledSize: new naver.maps.Size(25, 25),
+        //       origin: new naver.maps.Point(0, 0),
+        //     },
+        //         map: map,
+        //         position: cityhall
+        //     });
 
 
     </script>
 
-    </div></br></br>
+    </div>
 
 </body>

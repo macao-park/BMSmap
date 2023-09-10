@@ -150,17 +150,15 @@ li {
 }
 
 .라이브 {
-  width: 130px;
+  width: 50%;
   font-size: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-bottom: 25px;
 }
 
 .연극 {
-  width: 130px;
+  width: 50%;
   font-size: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-bottom: 25px;
 }
 
 .list img {
