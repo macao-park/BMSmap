@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+<head>
+    <title>부산문화생활</title>
+
+
+<!-- css font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    
+<!-- html font 변경 -->
+    <!-- <style> 
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        /* .jm-font{
+            font-family: 'Noto Sans KR', sans-serif;
+        } */
+
+
+        details {
+        font-size: 15px;
+        }
+
+
+        details[open] summary {
+            font-weight: 20px;
+        }
+
+        details > summary {
+            font-size: 15px;
+        }
+
+      </style> -->
+</head>
+
+
+<!-- css, jvs 연결 -->
+<link rel="stylesheet" href="./2310.css">
+<script src="./2310.js"></script>
+
+<!-- 폰에서보기 레이아웃 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<body>
+
+    <div class="entire">
+    
+        <div class="menu">            
+            
+            <div class="open">
+                
+                <div class="logo">
+                    <a href="../recommandation.html">
+                        <img src ="../img/logo.png" width="120px" height="60px"></a>
+                </div>       
+            
+                <div class="menu_side">
+                    <li><a href="./recommandation.html"> #전체보기</a></li>
+                    <li><a href="./canlendar/index.html"> #일자보기</a></li>
+                    <li><a href="space.html"> #공간어디</a></li>
+                </div>
+
+                <i onclick="show()" class="hamburg"> 
+                    <img src ="../img/hamburg.png" width="40px" height="50px"></a></i>
+
+                </div><hr></br>
+
+
+            <div id="menu_mini">  
+                <li><a href="../recommandation.html"> #전체보기</a></li>
+                <li><a href="./index.html"> #일자보기</a></li>
+                <li><a href="../space.html"> #공간어디</a></li>
+            </div>
+
+        
+
+
+<!-- 오늘 날짜로 달력 -->
+    <!-- <form>
+        <input type='date' id='currentDate'/>
+    </form>
+      
+    <script>
+      document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);;
+    </script></br> -->
+
+
+
+    <!-- <table class="Calendar">
+        <thead>
+            <tr>
+                <td onClick="prevCalendar();" style="cursor:pointer;">&#60;</td>
+                <td colspan="5">
+                    <span id="calYear"></span>년
+                    <span id="calMonth"></span>월
+                </td>
+                <td onClick="nextCalendar();" style="cursor:pointer;">&#62;</td>
+            </tr>
+            <tr>
+                <td>일</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table></br></br> -->
+
+
+
+    <div class="wrapper">
+        <header>
+            <div class="nav">
+              <a href = "./index.html"><button class="material-icons"> < </button></a>
+              <a href = "2310.html"><div class="current-date">2023년 10월</div></a>
+              <button class="material-icons"> > </button>
+            </div>
+          </header>
+          <div class="calendar">
+            <ul class="weeks">
+              <li>S</li>
+              <li>M</li>
+              <li>T</li>
+              <li>W</li>
+              <li>T</li>
+              <li>F</li>
+              <li>S</li>
+            </ul>
+            <ul class="days">
+              <!-- <li class="inactive">27</li>
+              <li class="inactive">28</li>
+              <li class="inactive">29</li>
+              <li class="inactive">30</li>
+              <li class="inactive">31</li> -->
+              <li><a href = "./231001.html">1</a></li>
+              <li><a href = "./231002.html">2</a></li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li><a href = "./contents/summary.html">30</a></li>
+              <li>31</li>
+            </ul>
+          </div>
+        </div>  
+
+
+</br></br>
+
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

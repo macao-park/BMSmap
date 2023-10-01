@@ -1,50 +1,138 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-
-
 <head>
-    <title>Document</title>
+    <title>부산문화생활</title>
 
-    <link rel="stylesheet" href="./test.css">
-    <script src="./test.js"></script>
+
+<!-- css font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./test.css">
+<script src="./test.js"></script>
+
+
+<!-- 폰에서보기 레이아웃 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
 </head>
 
 
-
 <body>
+
+    <div class="entire">
     
-<header>
-  <div class="hbody">
+        <div class="menu">            
+            
+            <div class="open">
+                
+                <div class="logo">
+                    <a href="./recommandation.html">
+                        <img src ="img/logo.png" width="120px" height="60px"></a>
+                </div>       
+            
+                <div class="menu_side">
+                    <li><a href="recommandation.html"> #전체보기</a></li>
+                    <li><a href="index.html"> #일자보기</a></li>
+                    <li><a href="space.html"> #공간어디</a></li>
+                </div>
+
+                <i onclick="show()" class="hamburg"> 
+                    <img src ="img/hamburg.png" width="40px" height="50px"></a></i>
+
+            </div><hr>
 
 
-    <div class="nav">
-
-      <div class="title">
-        <a href="./index.html">BRAND</a></div>
-
-          
-      <div class="menu_main" ul id="menu">
-        <li>Home</li>
-        <li>Notice</li>
-        <li>Contact</li>
-      </div>
+            <div id="menu_mini">  
+                <li><a href="recommandation.html"> #전체보기</a></li>
+                <li><a href="index.html"> #일자보기</a></li>
+                <li><a href="space.html"> #공간어디</a></li>
+            </div>
+       
 
 
-      <i onclick="show()" class="hamburg"> hamburg </i>
+
+    <head>
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=p086u5t9kk"></script>
+    </head>
+
+    <body>
+        <div id="map" style="width:100%;height: 85vh;"></div>
+    </body>
+
+
+
+
+
+    <body>
+
+    <div id="map">
+
+    <script id="code">
+
+
+
+        var cityhall = new naver.maps.LatLng(35.1577790, 129.0591715),
+            map = new naver.maps.Map('map', {
+                center: cityhall,
+                zoom: 13
+            }),
+
+            
+
+            marker = new naver.maps.Marker({
+            icon: {
+              url: "./img/point.png",
+              scaledSize: new naver.maps.Size(25, 25),
+              origin: new naver.maps.Point(0, 0),
+            },
+                map: map,
+                position: cityhall
+            });
+
+
+
+
+
+        var contentString = [
+
+        '<div class="iw_inner">',
+
+        '   <p style = "font-size: 15px; font-weight: bold; margin: 0px 0px 5px 0px" > 부산문화생활<br/>',
+        '   </p>',
+
+        '   <p style = "font-size: 10px; margin: 0px" > 부산시 해운대구 수영강변대로 140<br/>',
+        '       <a href="http://www.instagram.com/busan_munhwa_saenghwal/" target="_blank">@부산문화생활</a><br />',
+        '       <img src="/img/1.jpg" width="55" height="55"><img src="/img/2.jpg" width="55" height="55"><br />',
+        '   </p>',
+
+        '</div>'
+
+        ].join('');
         
+        var infowindow = new naver.maps.InfoWindow({
+            content: contentString,
+            maxWidth: 200,
+            backgroundColor: "#ffff",
+            borderColor: "#000000",
+            borderWidth: 1,
+            anchorSize: new naver.maps.Size(30, 3),
+            anchorSkew: true,
+            anchorColor: "#ffff",
+            pixelOffset: new naver.maps.Point(20, -20)
+        });
+
+        naver.maps.Event.addListener(marker, "click", function(e) {
+            if (infowindow.getMap()) {
+                infowindow.close();
+            } else {
+                infowindow.open(map, marker);
+            }
+        });
+
+    </script>
 
     </div>
-
-
-    <div id="menu_side">  
-      <a href="#">Language</a>
-      <a href="#">Practice</a>
-      <a href="#">Interview</a>
-    </div>
-
-  </div>
-</header>
 
 </body>
-</html> 

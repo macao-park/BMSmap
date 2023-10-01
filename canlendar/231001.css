@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+  }
+
+
+.entire {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu{
+  width: 100%;
+  height: 150px;
+}
+
+.open{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+
+
+.logo{
+  cursor: pointer;
+  /* text-align : left; */
+  padding-left: 0px;
+}
+
+
+
+@media screen and (min-width: 750px) {
+
+  .menu_side {
+      display: flex;
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 15px;
+      justify-content : space-evenly;
+      align-items : center;    
+      padding-top: 30px;
+  }
+  
+  .menu_side > li {
+      padding: 20px 30px;
+      font-size: 18px;
+  }
+  
+
+  .hamburg {
+      display: none;
+  }
+
+  #menu_mini {
+        display: none;
+  }
+
+
+}
+
+
+@media screen and (max-width: 750px) {
+  .open {
+    /* padding: 20px 40px; */
+    justify-content: space-between;
+  }  
+
+  .hamburg {
+    cursor: pointer;
+    padding-top: 5px;
+  }
+  
+  .menu_side {
+    display: none;
+  }
+
+
+  #menu_mini {
+    display: none;
+  }
+
+
+  /* 이거 있어야 반응형 좁혔을 때(active) 닫아서 나옴  */
+  #menu_mini:active {
+  }
+
+  #menu_mini {
+    padding-bottom: 30px;
+  }
+
+  #menu_mini a {
+    font-size: 15px;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  #menu_mini > li:hover {
+    background-color: orange;
+  }
+
+}
+
+
+input {
+    margin-top: 0.4rem;
+  }
+
+
+.contents {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap'); */
+
+
+/* div {
+    background-color : white;
+    height: auto;
+    width: 200px;
+    margin: 0px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius:5px;
+    box-shadow:0px 40px 30px -20px rgba(0,0,0,0.3);
+} */
+
+/* td {
+    width: 50px;
+    height: 50px;
+} */
+
+/* .Calendar {
+  margin-left:auto; 
+  margin-right:auto;
+  text-align: center;
+}
+
+.Calendar>thead>tr:first-child>td {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.Calendar>thead>tr:last-child>td {
+    font-weight: 600;    
+    font-size: 15px; 
+}
+
+.Calendar>tbody>tr>td>p {
+    height: 40px;
+    width: 40px;
+    border-radius: 45px;
+    transition-duration: .2s;
+    line-height: 40px;
+    margin: 2.5px;
+    display: block;
+    text-align: center;
+}        
+
+.pastDay {
+    color: lightgray;
+}
+
+.today {
+    background-color: #F5D042;            
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.futureDay {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.futureDay:hover{
+    background:#eee;
+}
+
+.futureDay.choiceDay,
+.today.choiceDay {
+    background: #0A174E;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/*#1 */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
+ 
+ /*#2 */
+* {
+  /* margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; */
+  /* box-sizing: border-box; */
+  /* font-family: 'Poppins', sans-serif; */
+}
+ 
+ /*#3 */
+button {
+  /* button 요소에 기본적으로 설정되는 스타일 속성 초기화 */
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+ 
+ /*#4 */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  /* min-height: 100vh; */
+  /* background: #008aff; */
+}
+
+	/*#5 */
+  .wrapper {
+    width: 350px;
+    
+    /* background: #fff; */
+    /* padding: 25px; */
+  }
+   
+  /*#6*/
+  .wrapper .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+  }
+  .wrapper .nav .current-date {
+    font-size: 18px;
+    font-weight: 600;
+
+  }
+  .wrapper .nav button {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #000000;
+
+  }
+
+  	/*#7*/
+.calendar ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-left: 0px;
+
+}
+.calendar .weeks li {
+  font-weight: bold;
+}
+.calendar .days {
+  /* margin-bottom: 20px; */
+}
+.calendar ul li {
+  /*#8*/
+  width: calc(100% / 7);
+  /*#9*/
+  position: relative;
+}
+.calendar .days li {
+  /*#10*/
+  z-index: 1;
+  margin-top: 20px;
+  cursor: pointer;
+}
+ 
+/*#11*/
+.days li.inactive {
+  color: #aaa;
+}
+
+.days li.active {
+  color: #fff;
+}
+.calendar .days li::before {
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+.days li:hover::before {
+  background: #f2f2f2;
+}
+.days li.active::before {
+  background: #008aff;
+}

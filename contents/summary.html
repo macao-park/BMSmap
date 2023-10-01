@@ -9,51 +9,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="./summary.css">
-<script src="./summary.js"></script>
-
+<!-- css랑 java 연결 -->
+<link rel="stylesheet" href="../contents/summary.css">
+<script src="../contents/summary.js"></script>
 
 <!-- 폰에서보기 레이아웃 -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+
 </head>
 
 
+<body>
 
-<div class="entire">
+    <div class="entire">
     
-    <div class="menu">        
-        
-        <div class="open">
+        <div class="menu">            
             
-            <div class="logo">
-                <a href="../recommandation.html">
-                    <img src ="../img/logo.png" width="150px" height="70px"></a>
-            </div>       
-        
-            <div class="menu_side">
-                <li><a href="../recommandation.html"> #전체보기</a></li>
-                <li><a href="../index.html"> #일자보기</a></li>
-                <li><a href="../space.html"> #공간어디</a></li>
-                <!-- <li><a href="ticket.html"> #초대권여기</a></li> -->
+            <div class="open">
+                
+                <div class="logo">
+                    <a href="./recommandation.html">
+                        <img src ="../img/logo.png" width="120px" height="60px"></a>
+                </div>        
+            
+                <div class="menu_side">
+                    <li><a href="recommandation.html"> #전체보기</a></li>
+                    <li><a href="index.html"> #일자보기</a></li>
+                    <li><a href="space.html"> #공간어디</a></li>
+                </div>
+
+                <i onclick="show()" class="hamburg"> 
+                    <img src ="../img/hamburg.png" width="40px" height="50px"></a></i>
+
+            </div><hr></br>
+
+
+            <div id="menu_mini">  
+                <li><a href="recommandation.html"> #전체보기</a></li>
+                <li><a href="index.html"> #일자보기</a></li>
+                <li><a href="space.html"> #공간어디</a></li>
             </div>
 
-            <i onclick="show()" class="hamburg"> 
-                <img src ="../img/hamburg.png" width="50px" height="70px"></a></i>
-
-        </div></br><hr></br>
 
 
-        <div id="menu_mini">  
-            <li><a href="../recommandation.html"> #전체보기</a></li>
-            <li><a href="../index.html"> #일자보기</a></li>
-            <li><a href="../space.html"> #공간어디</a></li>
-            <!-- <li><a href="ticket.html"> #초대권여기</a></li> -->
-        </div>
+        <div class="slider">
+            <div class="slides">
+              <div id="slide-1"><img src="../img/choigosim.jpg" alt=""></div>
+              <div id="slide-2"><img src="../img/2.jpg" alt=""></div>
+              <div id="slide-3"><img src="../img/3.jpg" alt=""></div>
+            </div>
+          
+            <!-- <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a> -->
+        </div><br><br>
 
-        <div class="box">
-            <img class="content" src="../img/choigosim.jpg">
-        </div> </br>
+
+        
 
 
         <div class="title">[팝업스토어] 최고심</div> </br>
@@ -62,10 +75,10 @@
         <div class="explain">
 
             <div class="explain_a">
-                <div class="info2">-일정</div>
-                <div class="info2">-장소</div>
-                <div class="info2">-링크</div></br>
-                <div class="info2">-설명</div>
+                <div class="info2">• 일정</div>
+                <div class="info2">• 장소</div>
+                <div class="info2">• 링크</div>
+                <div class="info2">• 설명</div>
             </div>                              
 
             <div class="explain_b">
@@ -73,25 +86,22 @@
                 <div class="info2">서면 어딘가</div>
                 <div class="info2">
                     <a href = "https://www.instagram.com/gosimperson/" target='_blank'>
-                        https://www.instagram.com/gosimperson/
+                        @gosimperson
                     </a>
                 </div>
                 <div class="info5">서면간 김에 가봤는데 하루종일 줄서있음 나도 돈쭐내주고 싶음 ㅜ</div>
             </div>
-        </div></br>
+        </div></br></br>
 
-
-        <a href="javascript:history.back();">
-            <button id="back">뒤로</button>
-        </a></br></br></br>
-
-
+        <div class = "button">
+            <a href="javascript:history.back();">
+                <button id="button">뒤로</button>
+            </a>
+        </div>
+    
+    </br></br></br>
 
     </div>  
-    
-    
-
-
 
 </div>
 
